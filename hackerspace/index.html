@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeCraft</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/sansation" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header id="box" class="head">
+        <nav id="shadow" class="nav1">
+            <ul>
+                <li class="n1"><a href="">Home</a></li>
+                <li class="n1"><a href="">Projects</a></li>
+                <li class="n1"><a href="">Events</a></li>
+                <li class="n1"><a href="">Contacts</a></li>
+            </ul>
+        </nav>
+        <div id="shadow2" class="join">
+            <a href=" https://hackerspace.bio.link">Join Now</a>
+        </div>
+        <nav class="nav2">
+            <ul>
+                <li><a href="https://www.instagram.com/_hackerspace_msit_/"><img src="instagram.png"
+                            alt="instagram"></a></li>
+                <li><a href="https://www.facebook.com/profile.php?id=100091680046825"><img src="facebook.png"
+                            alt="facebook"></a></li>
+                <li><a href="https://github.com/Hackerspace2023"><img src="github.png" alt="github"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="bg">
+        <div class="text">
+            <div class="cont">
+                <div class="heading">
+                    <p id="h2">Welcome To</p>
+                    <p id="h1">Hackerspace</p>
+                </div>
+                <div class="c1 anime">
+                    <p>Coding Community of MSIT</p>
+                </div>
+            </div>
+            <div class="info">
+                <div class="i1">
+                    Dive into the realm where lines of code weave dreams into reality and innovation knows no bounds.
+                    Welcome to Hackerspace, your launchpad to explore, create, and collaborate in the world of coding
+                    like never before.
+                </div>
+                <div class="stats"></div>
+                <div class="search">
+                    <img src="search.png" alt="">
+                    <input class="inbox" type="text" placeholder="Search">
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="foot">
+        <div class="more">
+            <div class="q1">
+                <p id="f1">Web Developement</p>
+                <p id="f2">is no more difficult</p>
+            </div><br><br>
+            <div class="q2 anime2">
+                <p id="f3">Become Zero to Hero coder.</p>
+            </div><br>
+            <div class="flink">
+                <div class="l1">
+                    <p id="f4"><a href="https://www.instagram.com/_hackerspace_msit_/">Contact Us</a></p>
+                </div>
+                <div class="l2">
+                    <p id="f5"><a href="https://hackerspace.bio.link">Learn More</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="web">
+            <div class="ellipse">
+                <img src="circle.svg" alt="">
+            </div>
+            <div class="logo">
+                <img src="logo.png" alt="">
+            </div>
+            <img class="html" src="html.png" alt="">
+            <img class="ts" src="typescript.png" alt="">
+            <img class="css" src="css.png" alt="">
+            <img class="atom" src="react.png" alt="">
+            <img class="js" src="js.png" alt="">
+
+        </div>
+    </footer>
+    <script>
+        let box = document.getElementById("box");
+        let shadow = document.getElementById("shadow");
+        let shadow2 = document.getElementById("shadow2");
+        window.addEventListener('scroll', function () {
+            if (window.pageYOffset > 5) {
+                box.classList.add("dim");
+                box.classList.remove("head");
+                shadow.classList.add("border");
+                shadow2.classList.add("border");
+            }
+            else {
+                box.classList.add("head");
+                box.classList.remove("dim");
+                shadow.classList.remove("border");
+                shadow2.classList.remove("border");
+            }
+        });
+    </script>
+</body>
+
+</html>
